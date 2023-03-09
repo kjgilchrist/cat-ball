@@ -5,5 +5,5 @@ func _ready():
 
 
 func _on_LifeTimer_timeout():
-	if get_tree().get_nodes_in_group("Balls").size() == 20:
+	if get_tree().get_nodes_in_group("Balls").size() == 5:
 		queue_free()

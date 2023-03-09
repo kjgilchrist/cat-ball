@@ -4,7 +4,7 @@ export(PackedScene) var ball_scene = load("res://scenes/Ball.tscn")
 
 func _on_SpawnTimer_timeout():
 	$SpawnTimer.wait_time = rand_range(2,5)
-	if get_tree().get_nodes_in_group("Balls").size() < 20:
+	if get_tree().get_nodes_in_group("Balls").size() < 5:
 		# Create a new instance of the Mob scene.
 		var ball = ball_scene.instance()
 		print("Mob Instance Created")
